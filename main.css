@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #f2f2f2;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.6rem;
+  padding-block: 1.6rem;
+  border-radius: 2.9rem;
+  border: none;
+  color: white;
+  cursor: url(../assets/Pointer.svg), auto;
+  transition: all 0.2s;
+}
+
+.container {
+  max-width: 144rem;
+  background-color: #fafafa;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: minmax(0, -webkit-min-content) 1fr minmax(0, -webkit-min-content);
+  grid-template-columns: minmax(0, min-content) 1fr minmax(0, min-content);
+  overflow: hidden;
+}
+.cta__hero-left {
+  transform: translateX(-8%);
+}
+.cta__hero-right {
+  transform: translateX(8%);
+}
+.cta__content {
+  display: grid;
+  justify-items: center;
+  margin-inline: 8.8rem;
+}
+.cta__content--headline {
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  color: #28283d;
+  margin-bottom: 3.2rem;
+}
+.cta__content--text {
+  line-height: 2.6rem;
+  color: #87879d;
+  margin-bottom: 3.2rem;
+}
+.cta__content--btns {
+  display: flex;
+  gap: 1.6rem;
+}
+.cta__content--btns-download {
+  padding-inline: 4rem;
+  background-color: #4d96a9;
+}
+.cta__content--btns-download span {
+  color: #8fe3f9;
+}
+.cta__content--btns-download:hover {
+  background-color: #71c0d4;
+}
+.cta__content--btns-ref {
+  padding-inline: 2.9rem;
+  background-color: #855fb1;
+}
+.cta__content--btns-ref:hover {
+  background-color: #d9b8ff;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+// Colors:
+$color-blue: #4d96a9;
+$color-blue-light: #8fe3f9;
+$color-purple: #855fb1;
+$color-purple-light: #d9b8ff;
+$color-grey: #87879d;
+$color-black: #28283d;
+$color-white: #fafafa;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #f2f2f2;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h2 {
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.6rem;
+  padding-block: 1.6rem;
+  border-radius: 2.9rem;
+  border: none;
+  color: white;
+  cursor: url(../assets/Pointer.svg), auto;
+  transition: all 0.2s;
+}
+
+.container {
+  max-width: 144rem;
+  background-color: $color-white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
