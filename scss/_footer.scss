@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgb(77, 150, 169, 0.8) 0%,
+      rgb(77, 150, 169, 0.8) 100%
+    ),
+    url(../assets/desktop/image-footer.jpg) no-repeat;
+  transform: translateY(-2.8rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content;
+  padding: 11rem 16.5rem;
+  grid-gap: 10rem;
+  align-items: center;
+  background-color: rgb(77, 150, 169, 0.5);
+  text-align: left;
+  color: $color-white;
+
+  &__btn {
+    background-color: $color-purple;
+    padding-inline: 4rem;
+    & span {
+      color: $color-purple-light;
+    }
+
+    &:hover {
+      background-color: #b18bdd;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.content {
+  margin-top: 6.4rem;
+  &__photos {
+    max-width: 111rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    margin-inline: auto;
+    margin-bottom: 8rem;
+
+    &--photo {
+      height: 24.2rem;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 7.2rem;
+    margin-inline: 46rem;
+    &--sub-heading {
+      font-weight: 900;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.4rem;
+      color: $color-blue;
+      margin-bottom: 1.6rem;
+    }
+
+    &--heading {
+      margin-bottom: 3.2rem;
+      margin-inline: 5rem;
+      color: $color-black;
+    }
+
+    &--text {
+      color: $color-grey;
+      line-height: 2.6rem;
+    }
+  }
+}

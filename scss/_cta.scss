@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: minmax(0, min-content) 1fr minmax(0, min-content);
   overflow: hidden;
+  margin-bottom: 11rem;
 
   &__hero-left {
     transform: translateX(-8%);

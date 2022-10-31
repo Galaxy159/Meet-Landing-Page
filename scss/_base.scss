@@ -7,6 +7,16 @@ $color-grey: #87879d;
 $color-black: #28283d;
 $color-white: #fafafa;
 
+// Media queries
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
 *,
 ::before,
 ::after {
@@ -31,6 +41,9 @@ p {
 }
 
 h2 {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4.4rem;
 }
 
 .btn {
@@ -55,4 +68,28 @@ h2 {
 .logo {
   margin-top: 8rem;
   margin-bottom: 6rem;
+}
+
+.separator {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  &__line {
+    width: 1px;
+    height: 8.4rem;
+    background-color: $color-grey;
+  }
+
+  &__number {
+    height: 5.6rem;
+    width: 5.6rem;
+    color: $color-grey;
+    background-color: $color-white;
+    border: 1px solid $color-grey;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    z-index: 1;
+  }
 }
