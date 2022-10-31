@@ -4,11 +4,26 @@
   overflow: hidden;
   margin-bottom: 11rem;
 
+  @include respond(tablet) {
+    grid-template-columns: min-content;
+    margin-bottom: 8rem;
+  }
+
   &__hero-left {
     transform: translateX(-8%);
+
+    @include respond(tablet) {
+      transform: translateX(-3%);
+      margin-bottom: 7.2rem;
+    }
   }
+
   &__hero-right {
     transform: translateX(8%);
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 
   &__content {
@@ -16,18 +31,34 @@
     justify-items: center;
     margin-inline: 8.8rem;
 
+    @include respond(tablet) {
+      margin-inline: 18rem;
+      transform: translateX(-3%);
+    }
+
     &--headline {
       font-weight: 900;
       font-size: 6.4rem;
       line-height: 6.4rem;
       color: $color-black;
       margin-bottom: 3.2rem;
+
+      @include respond(tablet) {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        margin-bottom: 2.4rem;
+      }
     }
 
     &--text {
       line-height: 2.6rem;
       color: $color-grey;
       margin-bottom: 3.2rem;
+
+      @include respond(tablet) {
+        font-size: 1.6rem;
+        margin-bottom: 3.2rem;
+      }
     }
 
     &--btns {

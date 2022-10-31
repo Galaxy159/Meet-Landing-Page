@@ -10,8 +10,13 @@ $color-white: #fafafa;
 // Media queries
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == tablet {
+  @if $breakpoint == phone {
     @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 1440px) {
       @content;
     }
   }
@@ -63,11 +68,18 @@ h2 {
   background-color: $color-white;
   margin: 0 auto;
   text-align: center;
+
+  @include respond(tablet) {
+    max-width: 76.8rem;
+  }
 }
 
 .logo {
-  margin-top: 8rem;
-  margin-bottom: 6rem;
+  margin-block: 8rem 6rem;
+
+  @include respond(tablet) {
+    margin-block: 4.8rem 6.4rem;
+  }
 }
 
 .separator {

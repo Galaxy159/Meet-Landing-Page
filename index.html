@@ -24,11 +24,16 @@
     <div class="container">
       <img src="./assets/logo.svg" alt="Logo" class="logo" />
       <section class="cta">
-        <img
-          src="./assets/desktop/image-hero-left.png"
-          alt="Avatar of people"
-          class="cta__hero-left"
-        />
+        <picture class="cta__hero-left">
+          <source
+            media="(max-width: 1440px)"
+            srcset="./assets/tablet/image-hero.png"
+          />
+          <img
+            src="./assets/desktop/image-hero-left.png"
+            alt="Avatar of people"
+          />
+        </picture>
         <div class="cta__content">
           <h1 class="cta__content--headline">Group Chat <br />for Everyone</h1>
           <p class="cta__content--text">

@@ -16,6 +16,33 @@
   text-align: left;
   color: $color-white;
 
+  @include respond(tablet) {
+    background: linear-gradient(
+        to bottom,
+        rgb(77, 150, 169, 0.8) 0%,
+        rgb(77, 150, 169, 0.8) 100%
+      ),
+      url(../assets/tablet/image-footer.jpg) no-repeat;
+    grid-template-columns: 1fr;
+    padding-block: 9rem 6.6rem;
+    padding-inline: 10rem;
+    text-align: center;
+    grid-gap: 0;
+  }
+
+  &__heading {
+    @include respond(tablet) {
+      margin-bottom: 4rem;
+      padding-inline: 6rem;
+    }
+  }
+
+  &__text {
+    @include respond(tablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
   &__btn {
     background-color: $color-purple;
     padding-inline: 4rem;

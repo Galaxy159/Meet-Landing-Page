@@ -1,5 +1,10 @@
 .content {
   margin-top: 6.4rem;
+
+  @include respond(tablet) {
+    margin-top: 6.7rem;
+  }
+
   &__photos {
     max-width: 111rem;
     display: grid;
@@ -8,15 +13,29 @@
     margin-inline: auto;
     margin-bottom: 8rem;
 
+    @include respond(tablet) {
+      max-width: 68.9rem;
+      column-gap: 1.1rem;
+      margin-bottom: 4.8rem;
+    }
+
     &--photo {
       height: 24.2rem;
       border-radius: 0.8rem;
+
+      @include respond(tablet) {
+        height: 15.6rem;
+      }
     }
   }
 
   &__text {
     margin-bottom: 7.2rem;
     margin-inline: 46rem;
+    @include respond(tablet) {
+      margin-inline: 6rem;
+      margin-bottom: 8.3rem;
+    }
     &--sub-heading {
       font-weight: 900;
       font-size: 1.6rem;
@@ -30,6 +49,9 @@
       margin-bottom: 3.2rem;
       margin-inline: 5rem;
       color: $color-black;
+      @include respond(tablet) {
+        margin-inline: 10rem;
+      }
     }
 
     &--text {
