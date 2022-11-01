@@ -103,6 +103,7 @@ h2 {
     width: 1px;
     height: 8.4rem;
     background-color: $color-grey;
+    opacity: 0.25;
   }
 
   &__number {
@@ -111,7 +112,7 @@ h2 {
     font-weight: 900;
     color: $color-grey;
     background-color: $color-white;
-    border: 1px solid $color-grey;
+    border: 1px solid rgb(135, 135, 157, 0.25);
     border-radius: 50%;
     display: grid;
     align-items: center;
