@@ -135,6 +135,7 @@ h2 {
 }
 .cta__hero-right {
   transform: translateX(8%);
+  transform: translateY(18%);
 }
 @media (max-width: 1439px) {
   .cta__hero-right {

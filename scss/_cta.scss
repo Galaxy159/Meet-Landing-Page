@@ -36,6 +36,7 @@
 
   &__hero-right {
     transform: translateX(8%);
+    transform: translateY(18%);
 
     @include respond(tablet) {
       display: none;
