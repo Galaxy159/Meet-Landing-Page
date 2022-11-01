@@ -10,6 +10,7 @@
   }
   @include respond(phone) {
     grid-template-columns: minmax(37.5rem, 1fr);
+    grid-template-rows: max-content;
     margin-bottom: 6.4rem;
   }
 
@@ -35,8 +36,8 @@
   }
 
   &__hero-right {
-    transform: translateX(8%);
-    transform: translateY(18%);
+    // transform: translateX(8%);
+    transform: translate(8%, 18%);
 
     @include respond(tablet) {
       display: none;

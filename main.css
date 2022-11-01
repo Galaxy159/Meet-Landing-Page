@@ -109,6 +109,8 @@ h2 {
 @media (max-width: 768px) {
   .cta {
     grid-template-columns: minmax(37.5rem, 1fr);
+    grid-template-rows: -webkit-max-content;
+    grid-template-rows: max-content;
     margin-bottom: 6.4rem;
   }
 }
@@ -134,8 +136,7 @@ h2 {
   }
 }
 .cta__hero-right {
-  transform: translateX(8%);
-  transform: translateY(18%);
+  transform: translate(8%, 18%);
 }
 @media (max-width: 1439px) {
   .cta__hero-right {
