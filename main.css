@@ -103,7 +103,6 @@ h2 {
   justify-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
-  margin-bottom: 11rem;
   padding-inline: 45rem;
   padding-top: 6rem;
   background: url(../assets/desktop/image-hero-left.png) no-repeat, url(../assets/desktop/image-hero-right.png) no-repeat;
@@ -111,7 +110,6 @@ h2 {
 }
 @media (max-width: 1439px) {
   .cta {
-    margin-bottom: 8rem;
     padding-top: 37.6rem;
     padding-inline: 15.5rem;
     background: url(../assets/tablet/image-hero.png) no-repeat;
@@ -121,7 +119,6 @@ h2 {
 @media (max-width: 768px) {
   .cta {
     grid-template-columns: minmax(37.5rem, 1fr);
-    margin-bottom: 6.4rem;
     background-size: 41.4rem 15.3rem;
     background-position: left -2rem top 0;
     padding-top: 20rem;
@@ -166,16 +163,18 @@ h2 {
 .cta__btns {
   display: flex;
   gap: 1.6rem;
+  margin-bottom: 11rem;
 }
 @media (max-width: 1439px) {
   .cta__btns {
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
   }
 }
 @media (max-width: 768px) {
   .cta__btns {
     display: grid;
     justify-items: center;
+    margin-bottom: 6.4rem;
   }
 }
 .cta__btns-download {

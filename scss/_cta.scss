@@ -3,7 +3,6 @@
   justify-items: center;
   justify-content: center;
   grid-template-columns: 1fr;
-  margin-bottom: 11rem;
   padding-inline: 45rem;
   padding-top: 6rem;
 
@@ -13,7 +12,6 @@
   background-position: left -3.3rem top 0rem, right -3.3rem top 5.5rem;
 
   @include respond(tablet) {
-    margin-bottom: 8rem;
     padding-top: 37.6rem;
     padding-inline: 15.5rem;
 
@@ -24,7 +22,6 @@
 
   @include respond(phone) {
     grid-template-columns: minmax(37.5rem, 1fr);
-    margin-bottom: 6.4rem;
     background-size: 41.4rem 15.3rem;
     background-position: left -2rem top 0;
     padding-top: 20rem;
@@ -67,14 +64,16 @@
   &__btns {
     display: flex;
     gap: 1.6rem;
+    margin-bottom: 11rem;
 
     @include respond(tablet) {
-      margin-bottom: 2rem;
+      margin-bottom: 8rem;
     }
 
     @include respond(phone) {
       display: grid;
       justify-items: center;
+      margin-bottom: 6.4rem;
     }
     &-download {
       padding-inline: 4rem;
