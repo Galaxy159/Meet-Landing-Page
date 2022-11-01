@@ -16,7 +16,7 @@ $color-white: #fafafa;
     }
   }
   @if $breakpoint == tablet {
-    @media (max-width: 1440px) {
+    @media (max-width: 1439px) {
       @content;
     }
   }
@@ -49,6 +49,11 @@ h2 {
   font-weight: 900;
   font-size: 4rem;
   line-height: 4.4rem;
+
+  @include respond(phone) {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
 }
 
 .btn {
@@ -71,6 +76,9 @@ h2 {
 
   @include respond(tablet) {
     max-width: 76.8rem;
+  }
+  @include respond(phone) {
+    max-width: 37.5rem;
   }
 }
 
